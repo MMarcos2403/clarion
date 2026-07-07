@@ -1,0 +1,41 @@
+# Clarion quality rubric — generated from clarion/rubric.py.
+version: 1
+scale: 0-100
+threshold: 70
+
+checks:
+  - id: leads-with-outcome
+    name: Leads with the outcome
+    weight: 20
+    severity: high
+    description: First sentence answers the question rather than restating it.
+  - id: no-sycophancy
+    name: No sycophancy
+    weight: 15
+    severity: high
+    description: No opening flattery.
+  - id: no-filler-close
+    name: No filler close
+    weight: 10
+    severity: medium
+    description: No empty closing lines.
+  - id: calibrated-language
+    name: Calibrated language
+    weight: 15
+    severity: medium
+    description: Hedging where warranted, not stacked into meaningless chains.
+  - id: no-arrow-chains
+    name: Full sentences, not arrow chains
+    weight: 10
+    severity: medium
+    description: Avoids telegraphic A -> B -> C shorthand.
+  - id: structure-fits
+    name: Structure fits length
+    weight: 15
+    severity: medium
+    description: No heavy structure wrapping a short answer.
+  - id: no-permission-theater
+    name: No permission theater
+    weight: 15
+    severity: low
+    description: Doesn't ask permission for the obvious reversible next step.

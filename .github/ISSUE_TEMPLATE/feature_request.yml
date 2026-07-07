@@ -1,0 +1,34 @@
+name: Feature request / new principle
+description: Propose a new principle, adapter, or capability.
+labels: ["enhancement", "triage"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of proposal
+      options: [new principle, new adapter, linter detector, CLI/API, docs, other]
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+      description: Describe the failure in model output you want to prevent.
+    validations:
+      required: true
+  - type: textarea
+    id: observability
+    attributes:
+      label: Is it observable from the output alone?
+      description: >
+        A principle only ships if you can tell from the output whether it was
+        followed. If it's a judgment call, explain how the linter could detect it.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Fit checks
+      options:
+        - label: It is model-agnostic (holds for Claude, GPT, Gemini).
+        - label: It is not already implied by an existing module.

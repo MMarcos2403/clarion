@@ -1,0 +1,8 @@
+# Default owners for everything in the repo.
+# Replace @OWNER with the maintainer handle(s).
+*                       @OWNER
+
+# The principle modules and rubric are the product's core — review carefully.
+/clarion/modules/       @OWNER
+/src/clarion/rubric.py  @OWNER
+/src/clarion/lint.py    @OWNER

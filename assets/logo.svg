@@ -1,0 +1,15 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Clarion logo">
+  <title>Clarion</title>
+  <rect width="128" height="128" rx="28" fill="#0B0F14"/>
+  <!-- noise resolving into one clean signal: jagged bars on the left collapse to a single beam on the right -->
+  <g fill="none" stroke="#8A94A6" stroke-width="5" stroke-linecap="round" opacity="0.55">
+    <path d="M26 44 v40"/>
+    <path d="M38 34 v60"/>
+    <path d="M50 52 v24"/>
+  </g>
+  <g fill="none" stroke="#F5A524" stroke-width="7" stroke-linecap="round">
+    <path d="M62 64 h44"/>
+    <circle cx="106" cy="64" r="4.5" fill="#F5A524" stroke="none"/>
+  </g>
+  <path d="M62 46 q10 18 0 36" fill="none" stroke="#F5A524" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+</svg>

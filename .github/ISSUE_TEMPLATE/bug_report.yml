@@ -1,0 +1,41 @@
+name: Bug report
+description: Something in the linter, CLI, or compose step behaves incorrectly.
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for the report. Please fill in enough for us to reproduce.
+  - type: input
+    id: version
+    attributes:
+      label: Clarion version
+      placeholder: "0.1.0 (or commit SHA)"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [compose, lint, rubric, cli, adapters, docs, packaging]
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Ideally the exact command and input text.
+      placeholder: |
+        echo "..." | clarion lint -
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs. actual
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: OS / Python
+      placeholder: "Windows 11 / Python 3.11"
