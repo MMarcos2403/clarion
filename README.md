@@ -8,7 +8,7 @@
 One system prompt. Any model. A rubric that CI can enforce.
 
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen)](.github/workflows/ci.yml)
-[![Python](https://img.shields.io/badge/python-3.9%2B-blue)](pyproject.toml)
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-black)](LICENSE)
 [![Ruff](https://img.shields.io/badge/lint-ruff-orange)](pyproject.toml)
 [![Models](https://img.shields.io/badge/models-Claude%20·%20GPT%20·%20Gemini-F5A524)](clarion/adapters)

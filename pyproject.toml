@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "A portable output-discipline layer for LLMs: one system prompt, any model."
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Clarion contributors" }]
 keywords = ["llm", "prompt-engineering", "system-prompt", "ai", "claude", "openai", "gemini", "evals"]
 classifiers = [
@@ -48,14 +48,12 @@ pythonpath = ["src"]
 
 [tool.ruff]
 line-length = 100
-target-version = "py39"
+target-version = "py310"
 src = ["src", "tests"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "SIM", "C4"]
 
-# Type-check target is 3.10 (the runtime floor is 3.9; the __future__ annotations
-# import keeps the code 3.9-safe, and the test matrix verifies it there).
 [tool.mypy]
 python_version = "3.10"
 packages = ["clarion"]

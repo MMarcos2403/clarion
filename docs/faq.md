@@ -39,7 +39,7 @@ The prompt adds tokens (a few hundred, fewer on `concise`). The linter is local
 and adds microseconds. There are no runtime dependencies and no network calls.
 
 ### What Python versions are supported?
-3.9 through 3.12, tested on Linux, macOS, and Windows in CI.
+3.10 through 3.13, tested on Linux, macOS, and Windows in CI.
 
 ### Why is it called Clarion?
 A clarion is a clear, ringing signal — and a clarion call is one that cuts

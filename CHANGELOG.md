@@ -6,6 +6,10 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+- Dropped Python 3.9 (end-of-life; pytest 9 and mypy both require 3.10+). The
+  supported range is now 3.10–3.13, resolving a dependency-update conflict.
+
 ### Planned
 - Model-graded eval harness (`clarion eval`) to complement the heuristic linter.
 - Additional adapters: LangChain, LlamaIndex, Anthropic Messages API example.
